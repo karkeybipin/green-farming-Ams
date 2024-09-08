@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+:root{
+   --blue:#223432;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-bg:#eee;
+   --border:.2rem solid rgba(0,0,0,.1);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+   --green:green;
+   --background: rgb(221,221,221);
+   --text: rgb(0,54,99);
+   --greenlight:rgb(108,192,112);
+   --orange: rgb(255,102,51);
+}
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+body {
+   background-image: url("../images/about.png") ;
+   background-size: cover;
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   backdrop-filter: blur(35px);
+
+}
+
+.form-container{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:20px;
+   padding-bottom: 60px;
+   backdrop-filter: blur(35px);
+}
+/* .form-container {
+   float: right;
+   margin-right: 20px; */
+   /* backdrop-filter: blur(35px); */
+/* } */
+
+.agriculture-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   /* background-color: var(--black); */
+   backdrop-filter: blur(35px);
+
+}
+
+.profile-picture {
+   width: 325px;
+   height: 325px;
+   border-radius: 20%;
+   overflow: hidden;
+   margin-right: 20px;
+   margin-top: -30px;
+   margin-left: 150px;
+   /* background: ; */
+   /* backdrop-filter: blur(-15px); */
+}
+
+.profile-picture img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+/*
+.form-container form {
+   padding: 20px;
+   border-radius: 5px;
+   background-image: url(../images/wallpaper.jpg);
+   background: #9e9a9a;
+   text-align: center;
+   width: 500px;
+} */
+.form-container form{
+   padding:20px;
+   margin-right: 50px;
+   border-radius: 5px;
+   box-shadow: 0 5px 10px rgb(125, 125, 125, 2.5);
+   /* background-image: url(../images/wallpaper.jpg); */
+   /* background: #9e9a9a; */
+   text-align: center;
+   width: 450px;
+   backdrop-filter: blur(35px);
+}
+
+.line{
+   margin-right: 100px;
+   background-color: #223432;
+   width: 2px;
+   height: 500px;
+   border: 2x solid #223432;
+   backdrop-filter: blur(35px);
+}
+/* .line2{
+   margin-right: 100px;
+   background-color: #223432;
+   width: 300px;
+   height: 300px;
+   border: 2x solid #223432;
+   backdrop-filter: blur(35px);
+}
+.line2 img{
+   width: 50;
+   height: 50;
+   margin: 0 auto;
+   padding: 0;
+} */
+.line2 {
+   width: 300px;
+   height: 300px;
+   margin-right: 100px;
+   overflow: hidden;
+   border-radius: 10px;
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.line2 img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 10px; 
+}
+
+
+.form-container form h3{
+   font-size: 30px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+   color: var(--text);
+}
+
+.form-container form input,
+.form-container form select{
+   width: 100%;
+   padding:10px 15px;
+   font-size: 17px;
+   margin:8px 0;
+   background: var(--greenlight);
+   border-radius: 5px;
+}
+
+.form-container form select option{
+   background: #fff;
+}
+
+.form-container form .form-btn{
+   background: green;
+   color:white;
+   text-transform: capitalize;
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.form-container form .form-btn:hover{
+   background: green;
+   color:#fff;
+   /* font-: bold; */
+}
+
+.form-container form p{
+   margin-top: 10px;
+   font-size: 20px;
+   color:#333;
+}
+
+.form-container form p a{
+   color:green;
+}
+
+.form-container form .error-msg{
+   margin:10px 0;
+   display: block;
+   background: (var(--orange));
+   color:var(--text);
+   border-radius: 5px;
+   font-size: 20px;
+   padding:10px;
+}
